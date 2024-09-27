@@ -3,7 +3,7 @@ import './globals.css';
 import { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'Symposium-2024',
+  title: 'celesti-2k24',
   description: 'Event registration page',
 };
 
