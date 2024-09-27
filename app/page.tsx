@@ -1,4 +1,4 @@
-"use client"; // Ensure this component runs on the client-side
+"use client"; // Ensure this component runs o the client-side
 
 import React, { useState } from "react";
 import Header from "./components/Header";
