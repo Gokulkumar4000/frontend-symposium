@@ -183,7 +183,7 @@ const Home: React.FC = () => {
         slotTitle="Slot 2"
         slotType="Technical Events"
         SlotTime="12:00PM - 1:00PM"
-        events={[{time: '12:00PM - 1:00PM', name: 'Fix'N solve feista', type: 'Technical'}]}
+        events={[{time: '12:00PM - 1:00PM', name: 'Fix\'N solve feista', type: 'Technical'}]}
         selectedEvent={slot2Selected} // Track Slot 2 selection
         onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
