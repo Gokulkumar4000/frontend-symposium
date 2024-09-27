@@ -167,7 +167,7 @@ const Home: React.FC = () => {
         slotTitle="Slot 1"
         SlotTime="10:00AM - 11:30AM"
         slotType="Technical Events"
-        events={[{ time: "10:00AM - 11:30AM", name: "Idea Exchange", type: "Technical" }]}
+        events={[{ time: "10:00AM - 11:30AM", name: "Deep quest", type: "Technical" }]}
         selectedEvent={slot1Selected}
         onSelectionChange={setSlot1Selected}
       />
@@ -183,26 +183,26 @@ const Home: React.FC = () => {
         slotTitle="Slot 2"
         slotType="Technical Events"
         SlotTime="12:00PM - 1:00PM"
-        events={[{time: '12:00PM - 1:00PM', name: 'Code Clash', type: 'Technical'}]}
+        events={[{time: '12:00PM - 1:00PM', name: 'Fix'N solve feista', type: 'Technical'}]}
         selectedEvent={slot2Selected} // Track Slot 2 selection
         onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
       <EventSelection
         SlotTime="12:00PM - 1:00PM"
-        events={[{time: '12:00PM - 1:00PM', name: 'Visionary Art', type: 'Technical'}]}
+        events={[{time: '12:00PM - 1:00PM', name: 'Poster odyssey', type: 'Technical'}]}
         selectedEvent={slot2Selected} // Track Slot 2 selection
         onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
       <EventSelection
         slotType="Non-Technical Events"
         SlotTime="12:00PM - 1:00PM"
-        events={[{time: '12:00PM - 1:00PM', name: 'Mobile Photography', type: 'Non-Technical'}]}
+        events={[{time: '12:00PM - 1:00PM', name: 'Pixelize', type: 'Non-Technical'}]}
         selectedEvent={slot2Selected} // Track Slot 2 selection
         onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
       <EventSelection
         SlotTime="12:00PM - 1:00PM"
-        events={[{ time: '12:00PM - 1:00PM', name: 'X-O Game', type: 'Non-Technical'}]}
+        events={[{ time: '12:00PM - 1:00PM', name: 'Quizalicious X-O', type: 'Non-Technical'}]}
         selectedEvent={slot2Selected} // Track Slot 2 selection
         onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
@@ -210,14 +210,14 @@ const Home: React.FC = () => {
         slotTitle="Slot 3"
         SlotTime="2:00PM - 3:10PM"
         slotType="Technical Events"
-        events={[{ time: '2:00PM - 3:10PM', name: 'Web Warriors', type: 'Technical'  }]}
+        events={[{ time: '2:00PM - 3:10PM', name: 'Web savvy', type: 'Technical'  }]}
         selectedEvent={slot3Selected}
         onSelectionChange={setSlot3Selected}
       />
       <EventSelection
         slotType="Non-Technical Events"
         SlotTime="2:00PM - 3:10PM"
-        events={[{  time: '2:00PM - 3:10PM', name: 'Solo Dance', type: 'Non-Technical' }]}
+        events={[{  time: '2:00PM - 3:10PM', name: 'Adaptune', type: 'Non-Technical' }]}
         selectedEvent={slot3Selected}
         onSelectionChange={setSlot3Selected}
       />
