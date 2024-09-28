@@ -101,7 +101,7 @@ const Home: React.FC = () => {
         // Store the form data in Firestore
         await db.collection("registrations").doc(docId).set(formData);
         setIsSubmitted(true);
-        alert("Form submitted successfully!");
+        alert("Form submitted successfully! Join to our whatsapp group");
 
         // Redirect to WhatsApp group
         const whatsappGroupLink = "https://chat.whatsapp.com/FkR22HTW4GVEI5jVxlvRG2"; // Replace with your WhatsApp group link
