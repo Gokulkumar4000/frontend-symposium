@@ -188,15 +188,27 @@ const Home: React.FC = () => {
         slotType="Technical Events"
         SlotTime="12:00PM - 1:00PM"
         events={[{time: '12:00PM - 1:00PM', name: 'Fix\'N solve feista', type: 'Technical'}]}
-        selectedEvent={slot2Selected} 
-        onSelectionChange={setSlot2Selected} 
+        selectedEvent={slot2Selected} // Track Slot 2 selection
+        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
+      />
+      <EventSelection
+        SlotTime="12:00PM - 1:00PM"
+        events={[{time: '12:00PM - 1:00PM', name: 'Poster odyssey', type: 'Technical'}]}
+        selectedEvent={slot2Selected} // Track Slot 2 selection
+        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
       <EventSelection
         slotType="Non-Technical Events"
         SlotTime="12:00PM - 1:00PM"
         events={[{time: '12:00PM - 1:00PM', name: 'Pixelize', type: 'Non-Technical'}]}
-        selectedEvent={slot2Selected} 
-        onSelectionChange={setSlot2Selected} 
+        selectedEvent={slot2Selected} // Track Slot 2 selection
+        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
+      />
+      <EventSelection
+        SlotTime="12:00PM - 1:00PM"
+        events={[{ time: '12:00PM - 1:00PM', name: 'Quizalicious X-O', type: 'Non-Technical'}]}
+        selectedEvent={slot2Selected} // Track Slot 2 selection
+        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
       <EventSelection
         slotTitle="Slot 3"
@@ -206,7 +218,13 @@ const Home: React.FC = () => {
         selectedEvent={slot3Selected}
         onSelectionChange={setSlot3Selected}
       />
-
+      <EventSelection
+        slotType="Non-Technical Events"
+        SlotTime="2:00PM - 3:10PM"
+        events={[{  time: '2:00PM - 3:10PM', name: 'Adaptune', type: 'Non-Technical' }]}
+        selectedEvent={slot3Selected}
+        onSelectionChange={setSlot3Selected}
+      />
       {!upiLink && (
         <ProceedButton
           disabled={isButtonDisabled}
