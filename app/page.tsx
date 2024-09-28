@@ -1,4 +1,4 @@
-"use client"; // Ensure this component runs o the client-side
+"use client"; // Ensure this component runs on the client-side
 
 import React, { useState } from "react";
 import Header from "./components/Header";
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
     return querySnapshot.empty; // If empty, transaction ID is unique
   };
 
-  // Handle form submission
+  // Handle form submission and redirect to WhatsApp
   const handleSubmit = async () => {
     if (selectedImage && transactionID.trim() !== "") {
       setIsLoading(true); // Set loading state to true
@@ -102,6 +102,10 @@ const Home: React.FC = () => {
         await db.collection("registrations").doc(docId).set(formData);
         setIsSubmitted(true);
         alert("Form submitted successfully!");
+
+        // Redirect to WhatsApp group
+        const whatsappGroupLink = "https://chat.whatsapp.com/FkR22HTW4GVEI5jVxlvRG2"; // Replace with your WhatsApp group link
+        window.location.href = whatsappGroupLink;
       } catch (error) {
         console.error("Error submitting the form:", error);
         alert("Error submitting the form, please try again.");
@@ -184,40 +188,21 @@ const Home: React.FC = () => {
         slotType="Technical Events"
         SlotTime="12:00PM - 1:00PM"
         events={[{time: '12:00PM - 1:00PM', name: 'Fix\'N solve feista', type: 'Technical'}]}
-        selectedEvent={slot2Selected} // Track Slot 2 selection
-        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
-      />
-      <EventSelection
-        SlotTime="12:00PM - 1:00PM"
-        events={[{time: '12:00PM - 1:00PM', name: 'Poster odyssey', type: 'Technical'}]}
-        selectedEvent={slot2Selected} // Track Slot 2 selection
-        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
+        selectedEvent={slot2Selected} 
+        onSelectionChange={setSlot2Selected} 
       />
       <EventSelection
         slotType="Non-Technical Events"
         SlotTime="12:00PM - 1:00PM"
         events={[{time: '12:00PM - 1:00PM', name: 'Pixelize', type: 'Non-Technical'}]}
-        selectedEvent={slot2Selected} // Track Slot 2 selection
-        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
-      />
-      <EventSelection
-        SlotTime="12:00PM - 1:00PM"
-        events={[{ time: '12:00PM - 1:00PM', name: 'Quizalicious X-O', type: 'Non-Technical'}]}
-        selectedEvent={slot2Selected} // Track Slot 2 selection
-        onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
+        selectedEvent={slot2Selected} 
+        onSelectionChange={setSlot2Selected} 
       />
       <EventSelection
         slotTitle="Slot 3"
         SlotTime="2:00PM - 3:10PM"
         slotType="Technical Events"
         events={[{ time: '2:00PM - 3:10PM', name: 'Web savvy', type: 'Technical'  }]}
-        selectedEvent={slot3Selected}
-        onSelectionChange={setSlot3Selected}
-      />
-      <EventSelection
-        slotType="Non-Technical Events"
-        SlotTime="2:00PM - 3:10PM"
-        events={[{  time: '2:00PM - 3:10PM', name: 'Adaptune', type: 'Non-Technical' }]}
         selectedEvent={slot3Selected}
         onSelectionChange={setSlot3Selected}
       />
