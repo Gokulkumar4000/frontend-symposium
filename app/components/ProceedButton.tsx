@@ -15,7 +15,7 @@ const ProceedButton: React.FC<ProceedButtonProps> = ({ disabled, onClick }) => {
         disabled ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#2884e6] text-white'
       } text-base font-bold leading-normal tracking-[0.015em] grow`}
     >
-      <span className="truncate">Proceed to Pay</span>
+      <span className="truncate">Proceed to Pay ₹150</span>
     </button>
   );
 };
