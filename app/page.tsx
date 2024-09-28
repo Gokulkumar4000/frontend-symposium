@@ -104,7 +104,7 @@ const Home: React.FC = () => {
         alert("Form submitted successfully! Join to our whatsapp group");
 
         // Redirect to WhatsApp group
-        const whatsappGroupLink = "https://chat.whatsapp.com/FkR22HTW4GVEI5jVxlvRG2"; // Replace with your WhatsApp group link
+        const whatsappGroupLink = "https://chat.whatsapp.com/FkR22HTW4GVEl5jVxlvRG2"; // Replace with your WhatsApp group link
         window.location.href = whatsappGroupLink;
       } catch (error) {
         console.error("Error submitting the form:", error);
