@@ -203,15 +203,9 @@ const Home: React.FC = () => {
         selectedEvent={slot2Selected} // Track Slot 2 selection
         onSelectionChange={setSlot2Selected} // Handle Slot 2 selection change
       />
+      
       <EventSelection
         slotTitle="Slot 3"
-        SlotTime="2:00PM - 3:10PM"
-        slotType="Technical Events"
-        events={[{ time: '2:00PM - 3:10PM', name: 'Web savvy', type: 'Technical'  }]}
-        selectedEvent={slot3Selected}
-        onSelectionChange={setSlot3Selected}
-      />
-      <EventSelection
         slotType="Non-Technical Events"
         SlotTime="2:00PM - 3:10PM"
         events={[{  time: '2:00PM - 3:10PM', name: 'Adaptune', type: 'Non-Technical' }]}
