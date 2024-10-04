@@ -231,7 +231,7 @@ const Home: React.FC = () => {
           onClick={async () => {
             if (!isButtonDisabled) {
               await new Promise((resolve) => setTimeout(resolve, 0)); // Mimic async behavior
-              setUpiLink("upi://pay?pa=velanvelan445@okhdfcbank&pn=EventOrganizer&am=150.00");
+              setUpiLink("upi://pay?pa=devaraj302003@oksbi&pn=EventOrganizer&am=150.00");
             }
           }}
         />
