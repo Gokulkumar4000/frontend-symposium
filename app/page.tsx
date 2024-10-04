@@ -176,7 +176,6 @@ const Home: React.FC = () => {
         onSelectionChange={setSlot1Selected}
       />
       <EventSelection
-        slotTitle="Slot 1"
         slotType="Non-Technical Events"
         SlotTime="10:00AM - 11:30AM"
         events={[{ time: "10:00AM - 11:30AM", name: "IPL Auction", type: "Non-Technical" }]}
